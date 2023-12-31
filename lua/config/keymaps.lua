@@ -15,6 +15,9 @@ keymap.set("n", "x", '"_x')
 keymap.set("n", "+", "<C-a>")
 keymap.set("n", "-", "<C-x>")
 
+-- Copy to clipboard
+keymap.set("v", '"+y', "y", opts)
+
 -- Delete a word backwards
 keymap.set("n", "dw", 'vb"_d')
 
