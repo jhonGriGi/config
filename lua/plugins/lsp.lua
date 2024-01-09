@@ -33,6 +33,16 @@ return {
           root_dir = function(...)
             return require("lspconfig.util").root_pattern(".git")(...)
           end,
+          filetypes = {
+            "js",
+            "javascript",
+            "javascriptreact",
+            "javascript.jsx",
+            "ts",
+            "typescript",
+            "typescriptreact",
+            "typescript.tsx",
+          },
           single_file_support = false,
           settings = {
             typescript = {
