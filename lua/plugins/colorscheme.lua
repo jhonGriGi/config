@@ -14,9 +14,10 @@ return {
     lazy = true,
     priority = 1000,
     opts = function()
-      return {
-        gruvbox_material_background = "hard",
-      }
+      vim.cmd([[
+      let g:gruvbox_material_foreground = "material"
+      let g:gruvbox_material_background = 'hard'
+      ]])
     end,
   },
   {
