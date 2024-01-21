@@ -77,4 +77,5 @@ return {
       lualine_bg_color = "#44475a",
     },
   },
+  { "EdenEast/nightfox.nvim" }, -- lazy
 }
