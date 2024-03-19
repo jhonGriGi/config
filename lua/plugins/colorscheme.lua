@@ -1,5 +1,10 @@
 return {
   {
+    "folke/tokyonight.nvim",
+    lazy = true,
+    opts = { style = "moon" },
+  },
+  {
     "craftzdog/solarized-osaka.nvim",
     lazy = true,
     priority = 1000,
@@ -19,9 +24,9 @@ return {
       vim.g.gruvbox_material_disable_italic_comment = 1
       vim.g.gruvbox_material_enable_italic = 0
       vim.g.gruvbox_material_enable_bold = 0
-      vim.g.gruvbox_material_transparent_background = 1
+      vim.g.gruvbox_material_transparent_background = 0
       -- Themes
-      vim.g.gruvbox_material_foreground = "mix"
+      vim.g.gruvbox_material_foreground = "original"
       vim.g.gruvbox_material_background = "hard"
       vim.g.gruvbox_material_ui_contrast = "high" -- The contrast of line numbers, indent lines, etc.
       vim.g.gruvbox_material_float_style = "dim" -- Background of floating windows
@@ -39,7 +44,7 @@ return {
     priority = 1000,
     lazy = false,
     opts = {
-      flavour = "macchiato",
+      flavour = "mocha",
     },
   },
   {
@@ -77,5 +82,6 @@ return {
       lualine_bg_color = "#44475a",
     },
   },
-  { "EdenEast/nightfox.nvim" }, -- lazy
+  { "EdenEast/nightfox.nvim" }, -- Lazy
+  { "JoosepAlviste/palenightfall.nvim" },
 }
