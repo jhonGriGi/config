@@ -16,7 +16,7 @@ require("lazy").setup({
         -- colorscheme = "solarized-osaka",
         -- colorscheme = "gruvbox-material",
         -- colorscheme = "rose-pine",
-        colorscheme = "catppuccin",
+        -- colorscheme = "catppuccin",
         -- colorscheme = "vscode",
         -- colorscheme = "nightfly",
         -- colorscheme = "NeoSolarized",
