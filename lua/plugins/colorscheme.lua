@@ -1,12 +1,10 @@
 return {
   {
     "folke/tokyonight.nvim",
-    lazy = true,
     opts = { style = "moon" },
   },
   {
     "craftzdog/solarized-osaka.nvim",
-    lazy = true,
     priority = 1000,
     opts = function()
       return {
@@ -36,7 +34,17 @@ return {
   },
   {
     "rose-pine/neovim",
-    lazy = true,
+    lazy = false,
+    config = function()
+      require("rose-pine").setup({
+        dark_variant = "main",
+        styles = {
+          bold = false,
+          italic = false,
+          transparency = true,
+        },
+      })
+    end,
   },
   {
     "catppuccin/nvim",
